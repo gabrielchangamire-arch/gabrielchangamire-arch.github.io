@@ -130,7 +130,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 </div>
 <div class="hero-stats">
 <div class="stat"><div class="stat-num">3.8</div><div class="stat-label">GPA</div></div>
-<div class="stat"><div class="stat-num">3+</div><div class="stat-label">Live Projects</div></div>
+<div class="stat"><div class="stat-num">5+</div><div class="stat-label">Live Projects</div></div>
 <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Subjects Tutored</div></div>
 </div>
 </div>
@@ -179,6 +179,24 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-note">Kept private on GitHub for security reasons. Source code and architecture walkthrough available upon request.</div>
 <div class="project-desc">My goal is to build a local LLM with full agentic powers, hosted on a cloud VM that I can access from my laptop or phone via secure remote connection. I have experimented with both cloud-based agents and fully local LLMs deployed via Ollama. I see real value in strengthening local LLM capabilities for three reasons: privacy, cost, and personal agency. A local LLM with agentic abilities, running 24/7 on a VM, could execute long-running tasks autonomously without recurring API costs. Currently the Oracle Cloud ARM64 Ubuntu instance is functional with security hardening, XRDP remote desktop, and session management all working. Actively iterating.</div>
 <div class="project-stack"><span class="stack-item">Oracle Cloud</span><span class="stack-item">Ubuntu</span><span class="stack-item">Ollama</span><span class="stack-item">Linux</span><span class="stack-item">Python</span></div>
+</div>
+<div class="project-card">
+<div class="project-tag">Backend / AWS</div>
+<div class="project-title">AWS Task Manager API</div>
+<div class="project-desc">Production-style task manager REST API built with FastAPI and SQLAlchemy. Runs on SQLite locally, swaps to PostgreSQL on RDS with one env var, and ships an optional S3 attachments path through boto3. Comes with a Dockerfile, GitHub Actions CI, a full EC2 + RDS + S3 deployment guide, and least-privilege IAM policies committed in the repo. The whole project is shaped to show that the same code that runs on a laptop deploys cleanly to AWS.</div>
+<div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">FastAPI</span><span class="stack-item">SQLAlchemy</span><span class="stack-item">AWS EC2</span><span class="stack-item">RDS</span><span class="stack-item">S3</span><span class="stack-item">IAM</span><span class="stack-item">Docker</span></div>
+<div class="project-links">
+<a href="https://github.com/gabrielchangamire-arch/aws-task-manager-api" target="_blank" class="project-link">GitHub &rarr;</a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-tag">Distributed Systems / AWS</div>
+<div class="project-title">Distributed Job Queue System</div>
+<div class="project-desc">Producer/consumer backend: a FastAPI API submits jobs to SQS, a separate worker process pulls them off the queue, runs the handler, and persists state to DynamoDB. Implements idempotency keys, bounded retries with dead-letter handling, and CloudWatch-shaped logging. The queue and store are interfaces with two implementations (in-memory and AWS), so the full system runs end-to-end locally without credentials and the same code targets real AWS via env vars. 19 tests including moto-mocked SQS and DynamoDB integration.</div>
+<div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">FastAPI</span><span class="stack-item">AWS SQS</span><span class="stack-item">DynamoDB</span><span class="stack-item">CloudWatch</span><span class="stack-item">IAM</span><span class="stack-item">boto3</span><span class="stack-item">Docker</span></div>
+<div class="project-links">
+<a href="https://github.com/gabrielchangamire-arch/distributed-job-queue-system" target="_blank" class="project-link">GitHub &rarr;</a>
+</div>
 </div>
 <div class="project-card">
 <div class="project-tag">Data / NLP</div>
