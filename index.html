@@ -227,10 +227,11 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-card">
 <div class="project-tag">Data / NLP</div>
 <div class="project-title">Sentiment Portfolio Tracker</div>
-<div class="project-desc">A live data pipeline that fetches stock prices, pulls financial news headlines, and scores sentiment using DistilBERT. Correlates daily sentiment with price movement and visualizes results in an interactive Streamlit dashboard.</div>
-<div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">HuggingFace</span><span class="stack-item">yfinance</span><span class="stack-item">NewsAPI</span><span class="stack-item">Streamlit</span><span class="stack-item">Pandas</span></div>
+<div class="project-desc">A live data pipeline that fetches stock prices, pulls financial news, and scores sentiment two different ways. The <strong>VADER version</strong> (lexicon-based, headline-only) ships in milliseconds; the <strong>DistilBERT version</strong> (HuggingFace transformer) reads both the headline and the article description for richer context. Both feed the same Streamlit dashboard, and both correlate daily sentiment with price movement.</div>
+<div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">HuggingFace</span><span class="stack-item">DistilBERT</span><span class="stack-item">VADER</span><span class="stack-item">yfinance</span><span class="stack-item">NewsAPI</span><span class="stack-item">Streamlit</span><span class="stack-item">Pandas</span></div>
 <div class="project-links">
-<a href="https://gabriel-sentiment-tracker.streamlit.app" target="_blank" class="project-link">Live Demo &rarr;</a>
+<a href="https://gabriel-sentiment-tracker.streamlit.app" target="_blank" class="project-link">Live (VADER) &rarr;</a>
+<a href="https://gabriel-sentiment-tracker-distilbert.streamlit.app" target="_blank" class="project-link">Live (DistilBERT) &rarr;</a>
 <a href="https://gabrielchangamire-arch.github.io/sentiment-tracker-explainer" target="_blank" class="project-link">Explainer &rarr;</a>
 <a href="https://github.com/gabrielchangamire-arch/sentiment-portfolio-tracker" target="_blank" class="project-link">GitHub &rarr;</a>
 </div>
