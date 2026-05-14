@@ -203,6 +203,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-desc">Production-style task manager REST API built with FastAPI and SQLAlchemy. Runs on SQLite locally, swaps to PostgreSQL on RDS with one env var, and ships an optional S3 attachments path through boto3. Comes with a Dockerfile, GitHub Actions CI, a full EC2 + RDS + S3 deployment guide, and least-privilege IAM policies committed in the repo. The whole project is shaped to show that the same code that runs on a laptop deploys cleanly to AWS.</div>
 <div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">FastAPI</span><span class="stack-item">SQLAlchemy</span><span class="stack-item">AWS EC2</span><span class="stack-item">RDS</span><span class="stack-item">S3</span><span class="stack-item">IAM</span><span class="stack-item">Docker</span></div>
 <div class="project-links">
+<a href="https://gabrielchangamire-arch.github.io/project-explainers/#aws-task-manager-api" target="_blank" class="project-link">Walkthrough &rarr;</a>
 <a href="https://github.com/gabrielchangamire-arch/aws-task-manager-api" target="_blank" class="project-link">GitHub &rarr;</a>
 </div>
 </div>
@@ -212,6 +213,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-desc">Producer/consumer backend: a FastAPI API submits jobs to SQS, a separate worker process pulls them off the queue, runs the handler, and persists state to DynamoDB. Implements idempotency keys, bounded retries with dead-letter handling, and CloudWatch-shaped logging. The queue and store are interfaces with two implementations (in-memory and AWS), so the full system runs end-to-end locally without credentials and the same code targets real AWS via env vars. 19 tests including moto-mocked SQS and DynamoDB integration.</div>
 <div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">FastAPI</span><span class="stack-item">AWS SQS</span><span class="stack-item">DynamoDB</span><span class="stack-item">CloudWatch</span><span class="stack-item">IAM</span><span class="stack-item">boto3</span><span class="stack-item">Docker</span></div>
 <div class="project-links">
+<a href="https://gabrielchangamire-arch.github.io/project-explainers/#distributed-job-queue-system" target="_blank" class="project-link">Walkthrough &rarr;</a>
 <a href="https://github.com/gabrielchangamire-arch/distributed-job-queue-system" target="_blank" class="project-link">GitHub &rarr;</a>
 </div>
 </div>
@@ -221,6 +223,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-desc">React + Vite front-end that consumes the AWS Task Manager API end to end &mdash; the dashboard half of a full-stack story I built and own. Six small components, an axios service layer that normalizes API errors, env-driven backend URL, accessibility-first selectors, and a responsive layout that collapses to a single column on mobile. 27 Vitest and React Testing Library tests across unit, integration, and service layers, with mocks drawn at clean boundaries so the suite is fast and deterministic.</div>
 <div class="project-stack"><span class="stack-item">React</span><span class="stack-item">Vite</span><span class="stack-item">JavaScript</span><span class="stack-item">Vitest</span><span class="stack-item">RTL</span><span class="stack-item">Axios</span><span class="stack-item">Responsive CSS</span><span class="stack-item">a11y</span></div>
 <div class="project-links">
+<a href="https://gabrielchangamire-arch.github.io/project-explainers/#react-task-manager-dashboard" target="_blank" class="project-link">Walkthrough &rarr;</a>
 <a href="https://github.com/gabrielchangamire-arch/react-task-manager-dashboard" target="_blank" class="project-link">GitHub &rarr;</a>
 </div>
 </div>
