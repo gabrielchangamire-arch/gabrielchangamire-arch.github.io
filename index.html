@@ -130,7 +130,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 </div>
 <div class="hero-stats">
 <div class="stat"><div class="stat-num">3.8</div><div class="stat-label">GPA</div></div>
-<div class="stat"><div class="stat-num">7+</div><div class="stat-label">Shipped Projects</div></div>
+<div class="stat"><div class="stat-num">8+</div><div class="stat-label">Shipped Projects</div></div>
 <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Subjects Tutored</div></div>
 </div>
 </div>
@@ -196,6 +196,16 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-note">Kept private on GitHub for security reasons. Source code and architecture walkthrough available upon request.</div>
 <div class="project-desc">My goal is to build a local LLM with full agentic powers, hosted on a cloud VM that I can access from my laptop or phone via secure remote connection. I have experimented with both cloud-based agents and fully local LLMs deployed via Ollama. I see real value in strengthening local LLM capabilities for three reasons: privacy, cost, and personal agency. A local LLM with agentic abilities, running 24/7 on a VM, could execute long-running tasks autonomously without recurring API costs. Currently the Oracle Cloud ARM64 Ubuntu instance is functional with security hardening, XRDP remote desktop, and session management all working. Actively iterating.</div>
 <div class="project-stack"><span class="stack-item">Oracle Cloud</span><span class="stack-item">Ubuntu</span><span class="stack-item">Ollama</span><span class="stack-item">Linux</span><span class="stack-item">Python</span></div>
+</div>
+<div class="project-card">
+<div class="project-tag">GenAI / Full-Stack</div>
+<div class="project-title">GenAI Ad Creative Studio</div>
+<div class="project-desc">A FastAPI + React workspace that turns a product brief &mdash; product detail, target audience, tone, objective &mdash; into a structured creative set of headlines, descriptions, calls to action, and campaign concepts. The interesting design is a swap-in generation layer: a deterministic <strong>mock mode</strong> keeps the whole workflow runnable with zero credentials, and the same call site flips to a real LLM provider over <code>httpx</code> the moment two env vars are set. Output is validated against a strict Pydantic schema either way, and campaigns persist to SQLite so the workspace survives reloads.</div>
+<div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">FastAPI</span><span class="stack-item">Pydantic</span><span class="stack-item">SQLite</span><span class="stack-item">httpx</span><span class="stack-item">React</span><span class="stack-item">Vite</span><span class="stack-item">pytest</span></div>
+<div class="project-links">
+<a href="https://gabrielchangamire-arch.github.io/project-explainers/#genai-ad-creative-studio" target="_blank" class="project-link">Walkthrough &rarr;</a>
+<a href="https://github.com/gabrielchangamire-arch/genai-ad-creative-studio" target="_blank" class="project-link">GitHub &rarr;</a>
+</div>
 </div>
 <div class="project-card">
 <div class="project-tag">Backend / AWS</div>
