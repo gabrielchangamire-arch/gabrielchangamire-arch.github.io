@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gabriel Changamire - Software Engineer</title>
+<title>Gabriel Changamire - Production Engineering</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -114,6 +114,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="nav-links">
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
+<a href="#opensource">Open Source</a>
 <a href="#experience">Experience</a>
 <a href="#contact">Contact</a>
 </div>
@@ -123,15 +124,15 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div>
 <div class="hero-tag">// Production Engineering Fellow @ Meta &times; MLH | CS Student | Backend &middot; Cloud &middot; Data</div>
 <h1 class="hero-name">Gabriel<span>Changamire</span></h1>
-<p class="hero-desc">Building systems that reduce suffering. CS student at Bellevue College, cloud infrastructure builder, and engineer in training. Lately I have been shipping AWS-backed backends &mdash; REST APIs on EC2 and RDS, distributed job queues with SQS and DynamoDB. I use code as a brush to paint solutions the world needs.</p>
+<p class="hero-desc">Building systems that reduce suffering. CS student at Bellevue College and Production Engineering Fellow in the Meta &times; MLH program. Lately I live close to the metal: administering Linux servers, writing systemd services and Bash deploy tooling, and contributing upstream to the open-source monitoring stack &mdash; including a fix merged into psutil, the library behind system monitoring for hundreds of millions of installs a month. I use code as a brush to paint solutions the world needs.</p>
 <div class="hero-btns">
 <a href="#projects" class="btn btn-primary">View Projects</a>
 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
 </div>
 <div class="hero-stats">
-<div class="stat"><div class="stat-num">3.8</div><div class="stat-label">GPA</div></div>
+<div class="stat"><div class="stat-num">300M+</div><div class="stat-label">Monthly downloads of software I've contributed to</div></div>
+<div class="stat"><div class="stat-num">3.67</div><div class="stat-label">GPA</div></div>
 <div class="stat"><div class="stat-num">8+</div><div class="stat-label">Shipped Projects</div></div>
-<div class="stat"><div class="stat-num">5+</div><div class="stat-label">Subjects Tutored</div></div>
 </div>
 </div>
 <div class="hero-cube-wrap">
@@ -139,7 +140,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="cube">
 <div class="face front">Python</div>
 <div class="face back">Cloud</div>
-<div class="face left">Data</div>
+<div class="face left">Linux</div>
 <div class="face right">Build</div>
 <div class="face top">Ship</div>
 <div class="face bottom">Learn</div>
@@ -153,10 +154,11 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="section-header"><span class="section-num">01 // About</span><div class="section-line"></div></div>
 <div class="about-grid">
 <div class="about-text">
-<p>I am a Computer Science student at <strong>Bellevue College</strong> with a 3.8 GPA, an Associate's degree with Honors, and a drive to build things that matter. I came to CS not just to code, but because I believe technology is one of the most powerful levers for reducing suffering in the world.</p>
+<p>I am a Computer Science student at <strong>Bellevue College</strong> with a 3.67 GPA, an Associate's degree with Honors, and a drive to build things that matter. I came to CS not just to code, but because I believe technology is one of the most powerful levers for reducing suffering in the world.</p>
 <p>Most recently I have been building production-shaped backends on <strong>AWS</strong>: a FastAPI task manager wired for EC2, RDS, and S3, and a distributed job queue with SQS, DynamoDB, retries, and idempotency. Both run end-to-end on a laptop with no AWS credentials, and the same code targets real AWS through environment variables. The point is not just to write the code, but to ship it with the deployment guides, IAM policies, tests, and CI an interviewer would actually want to see.</p>
+<p>This summer I am a <strong>Production Engineering Fellow in the Meta &times; MLH program</strong>, mentored weekly by senior Meta Production Engineers. I administer a CentOS Stream 9 server on DigitalOcean that runs a MySQL-backed Flask app in production: I wrote its systemd unit, built the Bash redeploy pipeline with curl health checks, and recently audited the box myself &mdash; found the database port exposed to the internet, and closed it the same day while keeping the site online. Along the way I started contributing upstream to the tools I use: a parsing fix <strong>merged into psutil</strong> (the library behind Ansible, Datadog, and most Python system monitoring) the same day I submitted it, and an open refactor PR in Glances.</p>
 <p>I work comfortably with modern development tools and frameworks, and I use them to augment and accelerate my own work. I particularly enjoy the orchestration side of engineering: chaining tools together into workflows that handle technical tasks quickly and reliably.</p>
-<p>I am part of the <strong>Mentors in Tech</strong> program at Bellevue College. My mentors include Spencer Nelson, a Principal UX Engineer and Manager at Microsoft, and Starlight Romero, a Principal Platform Engineer. Longer term, I want to work in AI engineering, building systems that sit at the intersection of multiple fields.</p>
+<p>I am part of the <strong>Mentors in Tech</strong> program at Bellevue College. My mentors include Spencer Nelson, a Principal UX Engineer and Manager at Microsoft, and Starlight Romero, a Principal Platform Engineer. Longer term, I want to work in production and reliability engineering &mdash; keeping large-scale systems healthy &mdash; with AI as one of the sharpest tools I build with.</p>
 </div>
 <div>
 <div class="skills-grid">
@@ -172,6 +174,9 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="skill-tag">Linux / SSH</div><div class="skill-tag">Oracle Cloud</div>
 <div class="skill-tag">Git / GitHub</div><div class="skill-tag">HuggingFace</div>
 <div class="skill-tag">Streamlit</div><div class="skill-tag">Pandas / NumPy</div>
+<div class="skill-tag">systemd / journalctl</div><div class="skill-tag">Bash scripting</div>
+<div class="skill-tag">MySQL</div><div class="skill-tag">CentOS / RHEL</div>
+<div class="skill-tag">firewalld / UFW</div><div class="skill-tag">DigitalOcean VPS</div>
 </div>
 </div>
 </div>
@@ -250,6 +255,16 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 </div>
 </div>
 <div class="project-card">
+<div class="project-tag">Production &middot; Live</div>
+<div class="project-title">MLH Production Deployment</div>
+<div class="project-desc">The team portfolio site from my Meta &times; MLH fellowship &mdash; and the server it runs on, which I administer. A Flask/Jinja app backed by MySQL on a CentOS Stream 9 droplet: process lifecycle owned by a systemd unit I wrote (auto-restart, ordered after the database), deployed by a Bash script that syncs from GitHub, refreshes dependencies, restarts the service, and curl health-checks the endpoint before declaring success. Hardened with firewalld and a localhost-bound database after I audited my own box.</div>
+<div class="project-stack"><span class="stack-item">CentOS</span><span class="stack-item">systemd</span><span class="stack-item">Bash</span><span class="stack-item">MySQL</span><span class="stack-item">Flask</span><span class="stack-item">firewalld</span><span class="stack-item">DigitalOcean</span></div>
+<div class="project-links">
+<a href="http://gabriel-p.duckdns.org:5000" target="_blank" class="project-link">Live &rarr;</a>
+<a href="https://github.com/gabrielchangamire-arch/MLH-Task-2-Team-1" target="_blank" class="project-link">GitHub &rarr;</a>
+</div>
+</div>
+<div class="project-card">
 <div class="project-tag">Finance / Python</div>
 <div class="project-title">Personal Finance Tracker</div>
 <div class="project-desc">CLI and Streamlit web app for tracking income and expenses. Features category summaries, budget warnings, persistent JSON storage, and three chart types: pie, bar, and cumulative line chart.</div>
@@ -261,34 +276,59 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 </div>
 </div>
 </section>
+<section id="opensource">
+<div class="section-header"><span class="section-num">03 // Open Source</span><div class="section-line"></div></div>
+<div class="projects-grid">
+<div class="project-card project-featured">
+<div class="project-tag">Merged Upstream &middot; Linux</div>
+<div class="project-title">psutil &mdash; swap_memory() fix</div>
+<div class="project-desc">psutil is the cross-platform process and system monitoring library behind Ansible, Datadog, and countless production stacks &mdash; 300M+ downloads a month. On arm64 Linux, <code>swap_memory()</code> crashed when the kernel printed a /proc/meminfo field with no space after the colon &mdash; a fixed-width <code>%8lu</code> printf quirk in the kernel's own procfs code that appears once shadow call stacks pass 10&nbsp;GB. I root-caused it to the kernel source, reproduced it in an arm64 container with a mocked procfs, found that the existing upstream PR only fixed the sibling function, and shipped the complementary fix with a regression test. <strong>Merged by the maintainer the same day.</strong></div>
+<div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">Linux /proc</span><span class="stack-item">arm64</span><span class="stack-item">pytest</span><span class="stack-item">Docker</span></div>
+<div class="project-links">
+<a href="https://github.com/giampaolo/psutil/pull/2865" target="_blank" class="project-link">Merged PR &rarr;</a>
+<a href="https://github.com/giampaolo/psutil/issues/2809" target="_blank" class="project-link">Issue &rarr;</a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-tag">Merged Upstream &middot; Linux</div>
+<div class="project-title">Glances &mdash; process list refactor</div>
+<div class="project-desc">Glances is a widely used top/htop alternative for GNU/Linux, BSD, macOS and Windows. My merged PR refactors the process-list curses header, cutting its cyclomatic complexity from 27 to 7 &mdash; making a hot piece of UI code easier to read, test, and extend. More contributions queued from maintainer-tagged issues.</div>
+<div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">curses</span><span class="stack-item">refactoring</span></div>
+<div class="project-links">
+<a href="https://github.com/nicolargo/glances/pull/3614" target="_blank" class="project-link">Merged PR &rarr;</a>
+</div>
+</div>
+</div>
+</section>
 <div id="experience-wrap">
 <section id="experience">
-<div class="section-header"><span class="section-num">03 // Experience &amp; Education</span><div class="section-line"></div></div>
+<div class="section-header"><span class="section-num">04 // Experience &amp; Education</span><div class="section-line"></div></div>
 <div class="timeline">
-<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">Summer 2026</div><div class="timeline-role">Production Engineering Fellow</div><div class="timeline-org">Meta &times; Major League Hacking (MLH)</div><div class="timeline-desc">Selected for the MLH Fellowship Production Engineering track, sponsored by Meta &mdash; a competitive 12-week remote program. Working alongside experienced engineers on production engineering and site reliability: infrastructure, monitoring, automation, and the operational practices that keep large-scale systems reliable.</div></div>
+<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">Jun 2026 to Sep 2026</div><div class="timeline-role">Production Engineering Fellow</div><div class="timeline-org">Meta &times; Major League Hacking (MLH)</div><div class="timeline-desc">Selected for Meta's competitive 12-week SRE/Production Engineering track. Mentored weekly by senior Meta Production Engineers on production observability &mdash; choosing the metrics that matter, time-series analysis, and recognizing failure patterns early &mdash; with sessions including Meta's VP of Production Engineering. Hands-on so far: administering a production CentOS Stream 9 VPS on DigitalOcean serving a MySQL-backed Flask app; wrote its systemd unit and a fail-safe Bash redeploy pipeline with curl health checks; Bash scripting, database services and caching, HTTP, and test-driven development with pytest/unittest. Ahead: Docker, CI/CD, monitoring and dashboards, networking, troubleshooting, and a capstone CTF.</div></div>
 <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">May 2025 to Present</div><div class="timeline-role">Computer Science Tutor</div><div class="timeline-org">Bellevue College Academic Success Center &amp; Writing Lab</div><div class="timeline-desc">Tutor students in CS, Python, Java, data structures, math, English, and economics at the Academic Success Center and Writing Lab. Through tutoring, especially in the Writing Lab, I have become a stronger communicator. These skills will serve me well in explaining complex technical systems to non-technical stakeholders in professional settings. Help students develop strong problem-solving skills and clear technical reasoning.</div></div>
-<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2025 to Present</div><div class="timeline-role">Mentors in Tech Fellow</div><div class="timeline-org">Bellevue College MinT Program</div><div class="timeline-desc">Part of Bellevue College's Mentors in Tech program, which connects students with industry mentors across many senior roles. My personal mentors are Spencer Nelson (Principal UX Engineer &amp; Manager, Microsoft) and Starlight Romero (Principal Platform Engineer). Building technical skills and professional network with their guidance.</div></div>
+<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">Jan 2026 to Jun 2026</div><div class="timeline-role">Mentors in Tech Fellow</div><div class="timeline-org">Bellevue College MinT Program</div><div class="timeline-desc">Part of Bellevue College's Mentors in Tech program, which connects students with industry mentors across many senior roles. My personal mentors are Spencer Nelson (Principal UX Engineer &amp; Manager, Microsoft) and Starlight Romero (Principal Platform Engineer). Building technical skills and professional network with their guidance.</div></div>
 <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2026</div><div class="timeline-role">MLH AI Hackfest Participant</div><div class="timeline-org">Major League Hacking</div><div class="timeline-desc">Attended MLH's AI Hackfest, gaining hands-on experience with Google AI Studio and the Gemini model family. Learned how to securely manage API keys with .env files, set up Python virtual environments with google-generativeai and python-dotenv, and work with features like grounding with Google Search, URL context analysis, and rapid app prototyping through natural language prompts.</div></div>
-<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2025 to Present</div><div class="timeline-role">Bachelor of Science, Computer Science</div><div class="timeline-org">Bellevue College &middot; Expected June 2027</div><div class="timeline-desc">3.8 GPA. Stephen Bouska Scholarship recipient. Outstanding Student Award. Active in tutoring, the MinT program, church community, and senior home volunteering.</div></div>
+<div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2025 to Present</div><div class="timeline-role">Bachelor of Science, Computer Science</div><div class="timeline-org">Bellevue College &middot; Expected June 2027</div><div class="timeline-desc">3.67 GPA. Stephen Bouska Scholarship recipient. Outstanding Student Award. Active in tutoring, the MinT program, church community, and senior home volunteering.</div></div>
 <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2023 to 2025</div><div class="timeline-role">Associate in Arts and Sciences, Computer Science</div><div class="timeline-org">Bellevue College &middot; Graduated with Honors</div><div class="timeline-desc">Foundation in CS fundamentals, mathematics, and sciences. Built the base for continued undergraduate studies and project work.</div></div>
 </div>
 </section>
 </div>
 <section id="awards">
-<div class="section-header"><span class="section-num">04 // Recognition</span><div class="section-line"></div></div>
+<div class="section-header"><span class="section-num">05 // Recognition</span><div class="section-line"></div></div>
 <div class="awards-grid">
 <div class="award-card"><div class="award-icon">&#127942;</div><div class="award-name">Stephen Bouska Scholarship</div></div>
 <div class="award-card"><div class="award-icon">&#11088;</div><div class="award-name">Outstanding Student Award</div></div>
 <div class="award-card"><div class="award-icon">&#127891;</div><div class="award-name">Honor Awards</div></div>
 <div class="award-card"><div class="award-icon">&#129309;</div><div class="award-name">Mentors in Tech</div></div>
+<div class="award-card"><div class="award-icon">&#128039;</div><div class="award-name">Merged psutil Contributor</div></div>
 </div>
 </section>
 <div id="contact-wrap">
 <section id="contact">
 <div class="contact-inner">
-<div class="section-header" style="justify-content:center"><span class="section-num">05 // Contact</span></div>
+<div class="section-header" style="justify-content:center"><span class="section-num">06 // Contact</span></div>
 <h2 class="contact-title">Let's <span>Build</span> Together</h2>
-<p class="contact-sub">I am actively looking for fellowship and internship opportunities in software engineering and AI. If you are building something that matters, I want to be part of it.</p>
+<p class="contact-sub">I am actively looking for production engineering / SRE and software engineering internships. If you are building something that matters &mdash; and keeping it running &mdash; I want to be part of it.</p>
 <div class="contact-links">
 <a href="mailto:gaberashawn@gmail.com" class="contact-link">Email</a>
 <a href="https://github.com/gabrielchangamire-arch" target="_blank" class="contact-link">GitHub</a>
