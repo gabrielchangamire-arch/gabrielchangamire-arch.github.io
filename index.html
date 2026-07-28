@@ -162,7 +162,8 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 </div>
 <div>
 <div class="skills-grid">
-<div class="skill-tag">Python</div><div class="skill-tag">Java</div>
+<div class="skill-tag">Python</div><div class="skill-tag">C++20</div>
+<div class="skill-tag">CMake / GoogleTest</div><div class="skill-tag">Java</div>
 <div class="skill-tag">JavaScript</div><div class="skill-tag">React</div>
 <div class="skill-tag">Vite</div><div class="skill-tag">Vitest / RTL</div>
 <div class="skill-tag">Responsive CSS / a11y</div><div class="skill-tag">FastAPI</div>
@@ -201,7 +202,18 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-desc">A local-first Linux fleet reliability and incident-response platform, built to demonstrate production engineering practice with <strong>measured evidence, not scale claims</strong>. A container agent collects bounded telemetry with psutil &mdash; the same library I've contributed to upstream &mdash; and survives restarts via a bounded SQLite spool with capped-backoff, full-jitter retries. FastAPI ingestion commits telemetry, idempotency state, and outbox events atomically to PostgreSQL; Redis Stream workers process downstream; an Nginx/TLS edge load-balances with cache-aside fleet reads. Prometheus, Grafana, and Alertmanager track SLOs; the whole stack deploys reproducibly to Docker Compose or local Kubernetes (kind/k3d), and has been through controlled failure/recovery drills and performance runs &mdash; raw evidence for every claim is committed under <code>evidence/</code>.</div>
 <div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">FastAPI</span><span class="stack-item">PostgreSQL</span><span class="stack-item">Redis Streams</span><span class="stack-item">Nginx / TLS</span><span class="stack-item">Prometheus / Grafana</span><span class="stack-item">Kubernetes</span><span class="stack-item">psutil</span></div>
 <div class="project-links">
+<a href="https://gabrielchangamire-arch.github.io/project-explainers/#fleetpulse" target="_blank" class="project-link">Walkthrough &rarr;</a>
 <a href="https://github.com/gabrielchangamire-arch/fleetpulse" target="_blank" class="project-link">GitHub &rarr;</a>
+</div>
+</div>
+<div class="project-card project-featured">
+<div class="project-tag">Systems / C++ &middot; Featured</div>
+<div class="project-title">C++ Matching Engine</div>
+<div class="project-desc">A deterministic C++20 limit order book built around price-time priority and integer tick prices. The core engine supports full and partial fills, cancellation, depth queries, exact trade records, and lifetime order-ID safety. A bounded multi-producer ingestion facade preserves explicit sequence order through one matching thread, applies backpressure, and fails closed on missing-sequence deadlines instead of silently skipping market input. The project includes 89 tests, a 12,000-command differential reference-model run, ASan/UBSan, TSan, clang-tidy, libFuzzer coverage, and profiling-backed benchmarks with measured results rather than exchange-scale claims.</div>
+<div class="project-stack"><span class="stack-item">C++20</span><span class="stack-item">CMake</span><span class="stack-item">GoogleTest</span><span class="stack-item">Google Benchmark</span><span class="stack-item">Concurrency</span><span class="stack-item">ASan / TSan</span><span class="stack-item">libFuzzer</span><span class="stack-item">GitHub Actions</span></div>
+<div class="project-links">
+<a href="https://gabrielchangamire-arch.github.io/project-explainers/#cpp-matching-engine" target="_blank" class="project-link">Walkthrough &rarr;</a>
+<a href="https://github.com/gabrielchangamire-arch/cpp-matching-engine" target="_blank" class="project-link">GitHub &rarr;</a>
 </div>
 </div>
 <div class="project-card project-featured">
