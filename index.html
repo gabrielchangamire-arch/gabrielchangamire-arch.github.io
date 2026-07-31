@@ -278,10 +278,10 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-card">
 <div class="project-tag">Production &middot; Live</div>
 <div class="project-title">MLH Production Deployment</div>
-<div class="project-desc">The team portfolio site from my Meta &times; MLH fellowship &mdash; and the server it runs on, which I administer. A Flask/Jinja app backed by MySQL on a CentOS Stream 9 droplet: process lifecycle owned by a systemd unit I wrote (auto-restart, ordered after the database), deployed by a Bash script that syncs from GitHub, refreshes dependencies, restarts the service, and curl health-checks the endpoint before declaring success. Hardened with firewalld and a localhost-bound database after I audited my own box.</div>
-<div class="project-stack"><span class="stack-item">CentOS</span><span class="stack-item">systemd</span><span class="stack-item">Bash</span><span class="stack-item">MySQL</span><span class="stack-item">Flask</span><span class="stack-item">firewalld</span><span class="stack-item">DigitalOcean</span></div>
+<div class="project-desc">My portfolio site from the Meta &times; MLH fellowship, and the server it runs on, which I administer end to end. A Flask/Jinja app backed by MariaDB on a CentOS Stream 9 droplet, containerized with Docker Compose and fronted by an nginx reverse proxy serving automatic Let's Encrypt HTTPS, with per-endpoint rate limiting on the write API. Deployed by a Bash script that syncs from GitHub, rebuilds the containers, and curl health-checks the live HTTPS endpoint before declaring success. Hardened with firewalld and a database kept off the public internet after I audited my own box.</div>
+<div class="project-stack"><span class="stack-item">CentOS</span><span class="stack-item">Docker Compose</span><span class="stack-item">nginx</span><span class="stack-item">Let's Encrypt</span><span class="stack-item">Bash</span><span class="stack-item">MariaDB</span><span class="stack-item">Flask</span><span class="stack-item">firewalld</span><span class="stack-item">DigitalOcean</span></div>
 <div class="project-links">
-<a href="http://gabriel-p.duckdns.org:5000" target="_blank" class="project-link">Live &rarr;</a>
+<a href="https://gabriel-p.duckdns.org" target="_blank" class="project-link">Live &rarr;</a>
 <a href="https://github.com/gabrielchangamire-arch/MLH-Task-2-Team-1" target="_blank" class="project-link">GitHub &rarr;</a>
 </div>
 </div>
