@@ -302,9 +302,19 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="section-header"><span class="section-num">03 // Open Source</span><div class="section-line"></div></div>
 <div class="projects-grid">
 <div class="project-card project-featured">
+<div class="project-tag">Applied Upstream &middot; Linux Kernel</div>
+<div class="project-title">Linux Kernel: sm750fb header cleanup</div>
+<div class="project-desc">My first patch to the Linux kernel, applied by <strong>Greg Kroah-Hartman</strong> with no changes requested. In the <code>sm750fb</code> framebuffer driver, the prototypes and kernel-doc in <code>sm750_accel.h</code> still used CamelCase parameter names like <code>sBase</code> and <code>pSrcbuf</code>, while the definitions in <code>sm750_accel.c</code> had already moved to snake_case. Parameter names in a C prototype are ignored by the compiler, so this drift was invisible to the build and misled only the humans reading the header to learn the API. I renamed them to match, clearing 10 checkpatch violations, and verified with a module build. A follow-up patch fixing kernel-doc warnings in the same file is under review.</div>
+<div class="project-note">Applied to the staging tree on 28 July 2026, queued for mainline in an upcoming merge window.</div>
+<div class="project-stack"><span class="stack-item">C</span><span class="stack-item">Linux Kernel</span><span class="stack-item">checkpatch</span><span class="stack-item">git send-email</span><span class="stack-item">kernel-doc</span></div>
+<div class="project-links">
+<a href="https://lore.kernel.org/linux-staging/20260719064601.12223-1-gaberashawn@gmail.com/" target="_blank" class="project-link">Patch on lore &rarr;</a>
+</div>
+</div>
+<div class="project-card project-featured">
 <div class="project-tag">Merged Upstream &middot; Linux</div>
-<div class="project-title">psutil &mdash; swap_memory() fix</div>
-<div class="project-desc">psutil is the cross-platform process and system monitoring library behind Ansible, Datadog, and countless production stacks &mdash; 300M+ downloads a month. On arm64 Linux, <code>swap_memory()</code> crashed when the kernel printed a /proc/meminfo field with no space after the colon &mdash; a fixed-width <code>%8lu</code> printf quirk in the kernel's own procfs code that appears once shadow call stacks pass 10&nbsp;GB. I root-caused it to the kernel source, reproduced it in an arm64 container with a mocked procfs, found that the existing upstream PR only fixed the sibling function, and shipped the complementary fix with a regression test. <strong>Merged by the maintainer the same day.</strong></div>
+<div class="project-title">psutil: swap_memory() fix</div>
+<div class="project-desc">psutil is the cross-platform process and system monitoring library behind Ansible, Datadog, and countless production stacks, at 300M+ downloads a month. On arm64 Linux, <code>swap_memory()</code> crashed when the kernel printed a /proc/meminfo field with no space after the colon, a fixed-width <code>%8lu</code> printf quirk in the kernel's own procfs code that appears once shadow call stacks pass 10&nbsp;GB. I root-caused it to the kernel source, reproduced it in an arm64 container with a mocked procfs, found that the existing upstream PR only fixed the sibling function, and shipped the complementary fix with a regression test. <strong>Merged by the maintainer the same day.</strong></div>
 <div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">Linux /proc</span><span class="stack-item">arm64</span><span class="stack-item">pytest</span><span class="stack-item">Docker</span></div>
 <div class="project-links">
 <a href="https://github.com/giampaolo/psutil/pull/2865" target="_blank" class="project-link">Merged PR &rarr;</a>
@@ -313,8 +323,8 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 </div>
 <div class="project-card">
 <div class="project-tag">Merged Upstream &middot; Linux</div>
-<div class="project-title">Glances &mdash; process list refactor</div>
-<div class="project-desc">Glances is a widely used top/htop alternative for GNU/Linux, BSD, macOS and Windows. My merged PR refactors the process-list curses header, cutting its cyclomatic complexity from 27 to 7 &mdash; making a hot piece of UI code easier to read, test, and extend. More contributions queued from maintainer-tagged issues.</div>
+<div class="project-title">Glances: process list refactor</div>
+<div class="project-desc">Glances is a widely used top/htop alternative for GNU/Linux, BSD, macOS and Windows. My merged PR refactors the process-list curses header, cutting its cyclomatic complexity from 27 to 7, making a hot piece of UI code easier to read, test, and extend. More contributions queued from maintainer-tagged issues.</div>
 <div class="project-stack"><span class="stack-item">Python</span><span class="stack-item">curses</span><span class="stack-item">refactoring</span></div>
 <div class="project-links">
 <a href="https://github.com/nicolargo/glances/pull/3614" target="_blank" class="project-link">Merged PR &rarr;</a>
