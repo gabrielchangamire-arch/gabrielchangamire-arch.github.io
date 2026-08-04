@@ -100,6 +100,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 .footer-text{font-size:0.7rem;color:var(--muted);letter-spacing:0.1em}
 .footer-accent{color:var(--accent)}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:3rem}.hero-cube-wrap{order:-1}.cube-container{width:180px;height:180px}.face{width:180px;height:180px}.face.front{transform:translateZ(90px)}.face.back{transform:rotateY(180deg) translateZ(90px)}.face.left{transform:rotateY(-90deg) translateZ(90px)}.face.right{transform:rotateY(90deg) translateZ(90px)}.face.top{transform:rotateX(90deg) translateZ(90px)}.face.bottom{transform:rotateX(-90deg) translateZ(90px)}.about-grid{grid-template-columns:1fr}nav{padding:1rem 1.5rem}.nav-links{gap:1rem}section{padding:4rem 1.5rem}#hero{padding:6rem 1.5rem 3rem}.hero-stats{gap:1.5rem;flex-wrap:wrap}}
+@media(max-width:600px){.nav-links{display:none}.hero-grid>*{min-width:0}.hero-name{font-size:clamp(2.6rem,13vw,4rem);overflow-wrap:anywhere}.hero-tag{letter-spacing:.12em;overflow-wrap:anywhere}.hero-stats{display:grid;grid-template-columns:1fr}.stat{min-width:0}.projects-grid{grid-template-columns:1fr}.project-card{padding:1.5rem}.project-links{flex-wrap:wrap}footer{padding:2rem 1.5rem;flex-direction:column;gap:.75rem;text-align:center}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes rotateCube{0%{transform:rotateX(0) rotateY(0)}100%{transform:rotateX(360deg) rotateY(720deg)}}
@@ -165,6 +166,7 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="skill-tag">Python</div><div class="skill-tag">C++20</div>
 <div class="skill-tag">CMake / GoogleTest</div><div class="skill-tag">Java</div>
 <div class="skill-tag">JavaScript</div><div class="skill-tag">React</div>
+<div class="skill-tag">Rust / Anchor</div><div class="skill-tag">Solana / Wallet Standard</div>
 <div class="skill-tag">Vite</div><div class="skill-tag">Vitest / RTL</div>
 <div class="skill-tag">Responsive CSS / a11y</div><div class="skill-tag">FastAPI</div>
 <div class="skill-tag">SQLAlchemy</div><div class="skill-tag">REST API Design</div>
@@ -214,6 +216,17 @@ footer{position:relative;z-index:1;padding:2rem 3rem;border-top:1px solid var(--
 <div class="project-links">
 <a href="https://gabrielchangamire-arch.github.io/project-explainers/#cpp-matching-engine" target="_blank" class="project-link">Walkthrough &rarr;</a>
 <a href="https://github.com/gabrielchangamire-arch/cpp-matching-engine" target="_blank" class="project-link">GitHub &rarr;</a>
+</div>
+</div>
+<div class="project-card project-featured">
+<div class="project-tag">Blockchain / Systems &middot; Featured</div>
+<div class="project-title">Solana Developer Passport</div>
+<div class="project-desc">A verifiable learning portfolio built end to end on Solana devnet. The React + TypeScript client uses Wallet Standard so browser wallets retain their keys and approve every write. A Rust/Anchor program derives one authority-owned Passport PDA per learner and separate milestone PDAs for bounded evidence links, with signer, seed, ownership, duplicate, and input-size constraints enforced on-chain. The deployed program, IDL metadata, Passport account, milestone account, and real transactions are all independently inspectable in Solana Explorer; LiteSVM security tests exercise both the happy path and unauthorized or malformed writes.</div>
+<div class="project-stack"><span class="stack-item">Rust</span><span class="stack-item">Anchor</span><span class="stack-item">Solana</span><span class="stack-item">PDAs</span><span class="stack-item">TypeScript</span><span class="stack-item">React</span><span class="stack-item">Solana Kit</span><span class="stack-item">LiteSVM</span></div>
+<div class="project-links">
+<a href="https://gabrielchangamire-arch.github.io/project-explainers/#solana-developer-passport" target="_blank" class="project-link">Walkthrough &rarr;</a>
+<a href="https://github.com/gabrielchangamire-arch/solana-developer-passport" target="_blank" class="project-link">GitHub &rarr;</a>
+<a href="https://explorer.solana.com/address/AeTzaLcDfnov1q64W2GPEupKh427cDnUCW5NbKR9q2Ck?cluster=devnet" target="_blank" class="project-link">Devnet &rarr;</a>
 </div>
 </div>
 <div class="project-card project-featured">
